@@ -123,3 +123,9 @@ The complete transformation from the base frame to the end-effector frame is:
 T06 = A1 × A2 × A3 × A4 × A5 × A6
 
 Each Ai represents the homogeneous transformation between two consecutive coordinate frames.
+## 13. 3D Robot Visualization
+
+The following figure shows the calculated UR5
+robot configuration and its DH coordinate frames.
+
+![UR5 Forward Kinematics](ur5_forward_kinematics_plot.png)
