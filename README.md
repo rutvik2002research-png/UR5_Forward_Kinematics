@@ -76,3 +76,24 @@ The program displays:
 Mechanical Engineering | Robotics Engineering
 
 **Project:** UR5 Forward Kinematics
+
+## 11. Results
+
+The forward kinematics program was executed successfully using Python and NumPy.
+
+### End-Effector Position
+
+| Coordinate | Position |
+|---|---:|
+| X | -195.291 mm |
+| Y | -294.981 mm |
+| Z | -685.649 mm |
+
+### Final Transformation Matrix
+
+```text
+[[-0.8627 -0.3953  0.3154 -0.1953]
+ [-0.4981  0.7718 -0.3953 -0.2950]
+ [-0.0872 -0.4981 -0.8627 -0.6856]
+ [ 0.0000  0.0000  0.0000  1.0000]]
+```
