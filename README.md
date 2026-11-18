@@ -97,3 +97,29 @@ The forward kinematics program was executed successfully using Python and NumPy.
  [-0.0872 -0.4981 -0.8627 -0.6856]
  [ 0.0000  0.0000  0.0000  1.0000]]
 ```
+
+## 12. Robot Kinematic Structure
+
+The following diagram illustrates the six-joint serial manipulator and its coordinate-frame transformation sequence.
+
+```mermaid
+flowchart LR
+    B["Base Frame {0}"]
+    J1["Joint 1<br/>A1"]
+    J2["Joint 2<br/>A2"]
+    J3["Joint 3<br/>A3"]
+    J4["Joint 4<br/>A4"]
+    J5["Joint 5<br/>A5"]
+    J6["Joint 6<br/>A6"]
+    E["End Effector<br/>Frame {6}"]
+
+    B --> J1 --> J2 --> J3 --> J4 --> J5 --> J6 --> E
+```
+
+### Transformation Sequence
+
+The complete transformation from the base frame to the end-effector frame is:
+
+T06 = A1 × A2 × A3 × A4 × A5 × A6
+
+Each Ai represents the homogeneous transformation between two consecutive coordinate frames.
